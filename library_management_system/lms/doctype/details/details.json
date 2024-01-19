@@ -1,0 +1,194 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:roll_no",
+ "creation": "2024-01-11 19:18:15.895994",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "roll_no",
+  "name1",
+  "department",
+  "image",
+  "year",
+  "phone",
+  "address",
+  "book_serial",
+  "book_name",
+  "issued_date",
+  "return_date",
+  "due_date",
+  "status",
+  "fine_amount",
+  "check_in",
+  "check_out",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "default": "NULL",
+   "fieldname": "roll_no",
+   "fieldtype": "Data",
+   "label": "Member Id",
+   "unique": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "NULL",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "NULL",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "NULL",
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "NULL",
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "NULL",
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "NULL",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "NULL",
+   "fieldname": "book_name",
+   "fieldtype": "Data",
+   "label": "Book Name"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "NULL",
+   "fieldname": "issued_date",
+   "fieldtype": "Data",
+   "label": "Issued Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Null",
+   "fieldname": "due_date",
+   "fieldtype": "Data",
+   "label": "Due Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "NULL",
+   "fieldname": "return_date",
+   "fieldtype": "Data",
+   "label": "Return Date"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "fine_amount",
+   "fieldtype": "Data",
+   "label": "Fine Amount"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_in",
+   "fieldtype": "Data",
+   "label": "Check in "
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "check_out",
+   "fieldtype": "Data",
+   "label": "Check Out"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Details",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "NULL",
+   "fieldname": "book_serial",
+   "fieldtype": "Data",
+   "label": "Book Serial"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-16 12:09:54.234416",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarian",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:book_serial",
+ "creation": "2024-01-05 17:16:32.936493",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "book_serial",
+  "book_name",
+  "borrower",
+  "borrower_name",
+  "b_status",
+  "issued_date",
+  "return_date",
+  "published",
+  "route",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fetch_from": "name1.book_serial",
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Published"
+  },
+  {
+   "allow_on_submit": 1,
+   "fetch_from": "Book.book_serial",
+   "fieldname": "book_serial",
+   "fieldtype": "Link",
+   "label": "Book Serial",
+   "options": "Book",
+   "unique": 1
+  },
+  {
+   "fieldname": "borrower",
+   "fieldtype": "Link",
+   "label": "Borrower",
+   "options": "Members"
+  },
+  {
+   "fetch_from": "borrower.name1",
+   "fieldname": "borrower_name",
+   "fieldtype": "Data",
+   "label": "Borrower Name",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "b_status",
+   "fieldtype": "Select",
+   "label": "B Status",
+   "options": "Issued\nReturned"
+  },
+  {
+   "fieldname": "issued_date",
+   "fieldtype": "Date",
+   "label": "Issued Date"
+  },
+  {
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "label": "Return Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Borrower",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "book_serial.book_name",
+   "fieldname": "book_name",
+   "fieldtype": "Data",
+   "label": "Book Name"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-16 09:48:09.441047",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "Borrower",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarian",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "issues",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

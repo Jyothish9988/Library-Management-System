@@ -1,0 +1,138 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:book_serial",
+ "creation": "2024-01-05 15:42:49.645683",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "book_serial",
+  "book_category",
+  "book_name",
+  "author_name",
+  "image",
+  "about",
+  "download",
+  "amended_from",
+  "route",
+  "published",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "book_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Book Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "author_name",
+   "fieldtype": "Data",
+   "label": "Author Name"
+  },
+  {
+   "fieldname": "about",
+   "fieldtype": "Text",
+   "label": "About"
+  },
+  {
+   "fieldname": "download",
+   "fieldtype": "Attach",
+   "label": "Download"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Book",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fetch_from": "amended_from.book_serial",
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Published"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nNot Available"
+  },
+  {
+   "fieldname": "book_serial",
+   "fieldtype": "Data",
+   "label": "Book Serial",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "book_category",
+   "fieldtype": "Link",
+   "label": "Book Category",
+   "options": "Category"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-16 09:48:36.333258",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "Book",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarian",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "book",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

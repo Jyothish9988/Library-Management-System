@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "roll_no.checkin_time",
+ "creation": "2024-01-09 09:37:42.587559",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "roll_no",
+  "checkin_time",
+  "checkout_time",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "checkin_time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Checked in",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "checkout_time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Checked Out",
+   "read_only": 1
+  },
+  {
+   "fieldname": "roll_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "user_id",
+   "options": "Members",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Attendance",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-11 21:21:05.120130",
+ "modified_by": "Administrator",
+ "module": "LMS",
+ "name": "Attendance",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarian",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

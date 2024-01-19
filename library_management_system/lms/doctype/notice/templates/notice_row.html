@@ -1,0 +1,16 @@
+<div class="card my-3">
+    <div class="card-header">
+        <h4>{{ doc.title }}</h4>
+    </div>
+    <div class="card-body">
+        <div class="row align-items-center">
+            <div class="col-sm-4">
+                <img alt="{{ doc.name }}" src="{{ doc.image }}" class="img-fluid" />
+            </div>
+            <div class="col">
+                <p class="card-text"><b>Description:</b> {{ doc.description }}</p>
+                <p class="card-text"><b>Date:</b> {{ doc.date }}</p>
+            </div>
+        </div>
+    </div>
+</div>

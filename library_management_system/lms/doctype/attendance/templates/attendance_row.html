@@ -1,0 +1,22 @@
+<div class="card my-3">
+    <div class="card-body">
+        <div class="row align-items-center">
+            <div class="col-sm-2">
+                {% if doc.roll_no %}
+                    {% set member = frappe.get_doc('Members', {'roll_no': doc.roll_no}) %}
+                    {% if member.image %}
+                        <img alt="{{ doc.name }}" src="{{ member.image }}" class="img-fluid rounded-circle"/>
+                    {% else %}
+                        <!-- Provide a default image if member doesn't have one -->
+                        <img alt="Default Image" src="/assets/path/to/default-image.jpg" class="img-fluid rounded-circle"/>
+                    {% endif %}
+                {% endif %}
+            </div>
+            <div class="col">
+                <h5 class="card-title">{{ doc.roll_no }}</h5>
+                <p class="card-text"><b>Checkin Time :</b> {{ doc.checkin_time }}</p>
+                <p class="card-text"><b>Checkout Time :</b> {{ doc.checkout_time }}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            display: flex;
+            width: 900px; /* Adjust the width as needed */
+            height: 500px; /* Adjust the height as needed */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 20px;
+            background-color: #fff;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-content {
+            flex: 1;
+            padding: 16px;
+            height: 100%;
+        }
+        table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .card-image {
+            flex-shrink: 0;
+        }
+        .card-image img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px 0 0 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-image">
+            <img src="{{ doc.image }}" alt="Student Image">
+        </div>
+        <div class="card-content">
+            <table>
+                <tr>
+                    <th>Roll No</th>
+                    <td>{{ doc.roll_no }}</td>
+                </tr>
+                <tr>
+                    <th>Name</th>
+                    <td>{{ doc.name1 }}</td>
+                </tr>
+                <tr>
+                    <th>Department</th>
+                    <td>{{ doc.department }}</td>
+                </tr>
+                <tr>
+                    <th>Year</th>
+                    <td>{{ doc.year }}</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>{{ doc.phone }}</td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>{{ doc.address }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

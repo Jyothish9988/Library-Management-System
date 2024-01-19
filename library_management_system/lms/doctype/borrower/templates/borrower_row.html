@@ -1,0 +1,25 @@
+<div class="card my-3">
+    <div class="card-body">
+        <div class="row align-items-center">
+            <div class="col-sm-2">
+                <!-- You can add an image here if needed -->
+                <!-- <img alt="{{ doc.name }}" src="{{ doc.image }}" class="img-fluid rounded-circle"/> -->
+            </div>
+            <div class="col">
+                <h5 class="card-title">{{ doc.name }}</h5>
+                <p class="card-text"><b>Book Name:</b> {{ doc.book_name }}</p>
+                <p class="card-text"><b>Issued Date:</b> {{ doc.issued_date }}</p>
+                <p class="card-text"><b>Return Date:</b> {{ doc.return_date }}</p>
+                <p class="card-text"><b>
+                    {% if doc.b_status == 'Issued' %}
+                    <span class="btn btn-success">Available</span>
+                    {% elif doc.b_status == 'Returned' %}
+                    <span class="btn btn-primary">Issued</span>
+                    {% endif %}
+                </p>
+                
+
+            </div>
+        </div>
+    </div>
+</div>

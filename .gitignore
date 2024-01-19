@@ -5,3 +5,158 @@
 tags
 library_management_system/docs/current
 node_modules/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+.sage.py
+
+# Environments
+.env
+.venv
+venv/
+ENV/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# PyInstaller
+dist/
+build/
+
+# Eclipse
+*.pydevproject
+.project
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# VS Code
+.vscode/
+.idea/
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+*.sublime-workspace
+*.sublime-settings
+*.sublime-mousemap
+*.sublime-keymap
+
+# sftp configuration file
+sftp-config.json
+
+# Package control specific files
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Node-waf configuration
+.lock-wscript
+
+# Node.js installer configuration
+.npmrc
+
+# Optionally, include the npm-debug.log file.
+npm-debug.log
+
+# Optional: JetBrains IDE .idea folder
+.idea/
+
+# Optional: Logs
+logs/
+*.log
+
+# Optional: OS-specific files
+.DS_Store
+Thumbs.db
+
+# Optional: Temporary files
+*.swp
+*.bak
+*.~*
+
+# Frappe specific
+public/files/
+public/attachments/
+assets/frappe
+sites/*/private/*
+sites/*/backups/*
